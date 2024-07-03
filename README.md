@@ -1,6 +1,6 @@
 # قصص الانبياء (Prophet Stories)
 
-![App Screenshot](path_to_your_screenshot.png)
+![App Screenshot](assets/images/icon.png)
 
 ## Table of Contents
 - [Overview](#overview)
