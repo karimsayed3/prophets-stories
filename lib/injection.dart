@@ -1,13 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
-import 'business_test/cubit/bloc_test_cubit.dart';
-import 'data_test/my_repo.dart';
-import 'data_test/web_services.dart';
+import 'data_layer/my_repo.dart';
+import 'data_layer/web_services.dart';
 
 final getIt = GetIt.instance;
 void initGetIt() {
-  getIt.registerLazySingleton<BlocTestCubit>(() => BlocTestCubit(getIt()));
   getIt.registerLazySingleton<MyRepo>(() => MyRepo(getIt()));
   getIt.registerLazySingleton<WebServices>(() => WebServices(createAndSetupDio()));
 }

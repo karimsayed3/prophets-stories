@@ -8,7 +8,6 @@ part of 'series_model.dart';
 
 Series _$SeriesFromJson(Map<String, dynamic> json) => Series(
       title: json['title'] as String?,
-      id: json['_id'],
       backGImg: json['backGImg'] as String?,
       series: (json['series'] as List<dynamic>?)
           ?.map((e) => SeriesData.fromJson(e as Map<String, dynamic>))
@@ -17,7 +16,6 @@ Series _$SeriesFromJson(Map<String, dynamic> json) => Series(
 
 Map<String, dynamic> _$SeriesToJson(Series instance) => <String, dynamic>{
       'title': instance.title,
-      '_id': instance.id,
       'backGImg': instance.backGImg,
       'series': instance.series,
     };

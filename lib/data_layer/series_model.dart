@@ -1,17 +1,15 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:muslim/data_test/series_data.dart';
+import 'package:muslim/data_layer/series_data.dart';
 
 part 'series_model.g.dart';
 
 @JsonSerializable()
 class Series {
   String? title;
-  @JsonKey(name: '_id')
-  dynamic id;
   String? backGImg;
   List<SeriesData>? series;
 
-  Series({this.title,this.id, this.backGImg, this.series});
+  Series({this.title,this.backGImg, this.series});
 
   factory Series.fromJson(Map<String, dynamic> json) => _$SeriesFromJson(json);
 

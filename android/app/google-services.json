@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "835989140449",
+    "project_id": "prophet-stories-2891c",
+    "storage_bucket": "prophet-stories-2891c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835989140449:android:932df09d877bd39da7d8a0",
+        "android_client_info": {
+          "package_name": "com.example.muslim"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzODOgvYyhQjHzzbpovlvpXj9QTCj_TK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:muslim/data_test/series_data.dart';
-import 'package:muslim/data_test/series_model.dart';
+import 'package:muslim/data_layer/series_data.dart';
+import 'package:muslim/data_layer/series_model.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'web_services.g.dart';
@@ -14,7 +14,6 @@ abstract class WebServices {
   Future<Series> getAllAflam();
   @GET("all_series")
   Future<List<Series>> getAllSeries();
-  
   @GET("all_series/{id}")
   Future<List<SeriesData>> getSeriesById(@Path() String id);
 
